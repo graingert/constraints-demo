@@ -21,7 +21,7 @@ jobs:
 
       - name: install pip
         run: |
-          pip install --require-hashes requirements-ci.txt
+          pip install --require-hashes -r requirements-ci.txt
           pip install git+https://github.com/pypa/pip.git@0c284520c6d068cb25ac89d9dbee0456c2eba23a
 
       - name: install black
